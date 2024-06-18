@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Magoom"
+})
+
+<body>
+    @@include('components/loader/_page-loader.html', {})
+
+    @@include('sections/header/_header.html',{
+    "mod": "header--purple"
+    })
+
+    <main class="_page">
+
+        <section class="about-us-intro">
+            <div class="content-two-columns content-two-columns--bottom-on-mob">
+                <div class="container about-us-intro__inner">
+                    <div class="content-two-columns__body">
+                        <div class="content-two-columns__media">
+                            <div class="content-two-columns__media-inner">
+                                <div class="about-us-intro__img ibg" data-css-variable-height="--about-us-img-height">
+                                    <img src="img/photo/about-us-intro-img.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-two-columns__text-content">
+                            <div class="content-two-columns__text-content-title-slot">
+                                <div class="about-us-intro__title title-2-mob-lg">
+                                    <img class="title-icon-1" src="img/icons/decor-icon-3.svg" alt="">
+                                    <span class="row-1">
+                                        meet the
+                                    </span>
+                                    <span class="row-2">
+                                        magoom 
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="content-two-columns__text-content-sub-title-slot">
+                                <h2 class="title-2-subtitle uppercase">
+                                    Learn more about us
+                                </h2>
+                            </div>
+
+                            <div class="content-two-columns__text-content-text-slot">
+                                <div class="text-content last-no-margin">
+                                    <p>
+                                        Magoom is where your digital dreams transform into reality. As a boutique digital marketing studio, we craft bespoke user acquisition strategies through various digital channels.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="about-us-intro__btn content-two-columns__text-content-btn-slot">
+                                <a href="#" class="btn-default btn-default--secondary">
+                                    More about us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-us-intro__card about-us-intro-card">
+                        <img class="decor-cion" src="img/icons/decor-icon-1.svg" alt="">
+                        <div class="about-us-intro-card__head title-2-subtitle">
+                            “Truly top-notch service.”
+                        </div>
+                        <div class="about-us-intro-card__body">
+                            <div class="about-us-intro-card__avatar ibg">
+                                <img src="img/photo/about-us-avatar.png" alt="">
+                            </div>
+                            <div class="about-us-intro-card__content">
+                                <div class="about-us-intro-card__name title-3">
+                                    
+                                    Janis Balodis
+                                </div>
+                                <div class="about-us-intro-card__position">
+                                    Advisor at <a href="#">eXpanby</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- == FOOTER ================== -->
+    @@include('sections/footer/_footer.html')
+    <!-- == // FOOTER ================== -->
+</body>
+
+</html>
