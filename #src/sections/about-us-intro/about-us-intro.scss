@@ -11,6 +11,10 @@
             height: var(--header-height);
             background-color: var(--purple);
         }
+
+        & + .text-content-in-color-box {
+            margin-top: -2.4rem;
+        }
     }
 
     @media (min-width: $mq-lg) {

@@ -1,8 +1,8 @@
-.page-loaded {
-    & .home-intro__row-1 {
-        opacity: 1;
-    }
-}
+// .page-loaded {
+//     & .home-intro__row-1 {
+//         opacity: 1;
+//     }
+// }
 
 .home-intro {
     background-color: var(--green);
@@ -32,8 +32,8 @@
     }
 
     &__row-1 {
-        opacity: 0;
-        transition: opacity .6s ease .4s;
+        // opacity: 0;
+        // transition: opacity .6s ease .4s;
     }
 
     &__title {

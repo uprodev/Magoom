@@ -1,0 +1,113 @@
+.about-use-text-content {
+
+    &__title {
+        position: relative;
+
+        @media (min-width: $mq-lg) {
+            width: 100%;
+            max-width: 61rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & .title-icon-1 {
+            position: absolute;
+            height: 6.7rem;
+            left: 18.9rem;
+            top: 4.6rem;
+            z-index: 3;
+
+            @media (min-width: $mq-lg) {
+                height: 15.6rem;
+                left: 36.4rem;
+                top: -2.9rem;
+            }
+        }
+
+        & .row-2 {
+            font-style: italic;
+        }
+    }
+
+    &__title-desk {
+        display: none;
+        flex-direction: column;
+
+        @media (min-width: $mq-lg) {
+            display: flex;
+
+        }
+
+        & .row-2 {
+            margin-left: 12rem;
+        }
+    }
+
+    &__title-mob {
+        @media (min-width: $mq-lg) {
+            display: none;
+        }
+
+        & .row-1 {
+            margin-left: 3.1rem;
+        }
+        & .row-2 {}
+    }
+}
+
+.text-content-in-color-box {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+    @media (min-width: $mq-lg) {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+
+    @media (min-width: 0px) and (max-width: 991.98px) {
+        border-radius: 2.4rem 2.4rem 0 0;
+        position: relative;
+
+        &.bg-blue-light {
+            & + .cta {
+                background-color: var(--light-blue);
+            }
+        }
+
+        & + .cta {
+            margin-top: -1px;
+        }
+    }
+
+    &__title-slot {
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 31.2rem;
+        }
+    }
+
+    &__text {
+        margin-top: 2.4rem;
+        display: grid;
+        gap: 1.6rem;
+
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50.8rem;
+        }
+
+        @media (min-width: $mq-lg) {
+            margin-top: 5.4rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 4.5rem;
+        }
+    }
+
+    &__text-col-1 {
+    }
+
+    &__text-col-2 {
+    }
+}
