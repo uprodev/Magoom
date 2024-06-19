@@ -638,6 +638,27 @@ function initCssVariableHeight() {
         window.addEventListener('resize', setVariable);
     })
 }
+function initCssVariableWidth() {
+    const elements = document.querySelectorAll('[data-css-variable-width]');
+    elements.forEach(el => {
+        const variableName = el.getAttribute('data-css-variable-width');
+        if (!variableName) return;
+
+        const parent = el.closest(el.getAttribute('data-parent'));
+
+        const setVariable = () => {
+            if(parent) {
+                parent.style.setProperty(variableName, el.clientWidth + 'px');
+            } else {
+                document.body.style.setProperty(variableName, el.clientWidth + 'px');
+            }
+        }
+
+        setVariable();
+
+        window.addEventListener('resize', setVariable);
+    })
+}
 
 function initParallax() {
     const elements = document.querySelectorAll('[data-scroll-parallax]');
@@ -699,6 +720,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	initSmoothScrollByAnchors();
 	initAnchorsLinkOffset();
 	initCssVariableHeight();
+	initCssVariableWidth();
 	initParallax();
 
 

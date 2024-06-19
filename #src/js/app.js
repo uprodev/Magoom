@@ -20,6 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	initSmoothScrollByAnchors();
 	initAnchorsLinkOffset();
 	initCssVariableHeight();
+	initCssVariableWidth();
 	initParallax();
 
 

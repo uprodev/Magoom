@@ -1,3 +1,40 @@
+.services-list {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    pointer-events: none;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: $mq-lg) {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    
+    }
+
+    & .services-card {
+        pointer-events: auto;
+    }
+
+    & .services__col-2 {
+        @media (min-width: $mq-lg) {
+            padding-top: 33.2rem;
+        }
+    }
+    & .services__col-1 {
+        @media (min-width: $mq-lg) {
+            padding-top: 52rem;
+        }
+    }
+
+    & + .cta {
+        @media (min-width: $mq-lg) {
+            margin-top: -18.6rem;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
 .services {
     display: grid;
     gap: 2.4rem;
@@ -11,7 +48,7 @@
     @media (min-width: $mq-lg) {
         gap: 3.2rem;
         grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
+        align-items: flex-start;
     }
 
     &__col {
@@ -50,6 +87,7 @@
     @media (min-width: $mq-lg) {
         text-align: left;
         justify-content: initial;
+        padding: 3.2rem;
     }
 
     &__icon {

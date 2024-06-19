@@ -1,0 +1,67 @@
+// intro
+.service-management-page {
+    & .services-single-intro__title {
+        & .row-2 {
+            margin-left: auto;
+
+            @media (min-width: $mq-lg) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+//primary section
+.service-management-page {
+    @media (min-width: $mq-lg) {
+
+        & .services-single-primary-section__title {
+            & .row-2 {
+                margin-left: 0;
+            }
+        }
+
+        & .advantages-card__decor-word-1 {
+            left: 15.9rem;
+        }
+        & .advantages-card__decor-word-2 {
+            left: 2rem;
+        }
+        & .advantages-card__icon {
+            margin-left: 0;
+            margin-top: 1.8rem;
+        }
+    }
+}
+
+//color box
+.service-management-page {
+    & .text-content-in-color-box__title {
+        & .title-icon-1 {
+            display: block;
+            position: absolute;
+            height: 9.3rem;
+            left: 21.3rem;
+            top: 8.2rem;
+            z-index: 3;
+
+            @media (min-width: $mq-lg) {
+                height: 15.6rem;
+                left: 104rem;
+                top: 5.3rem;
+            }
+        }
+    }
+
+    & .text-content-in-color-box__title-desk {
+        & .row-1 {
+            white-space: nowrap;
+        }
+    }
+
+    & .text-content-in-color-box__title-mob {
+        & .row-3 {
+            margin-left: 8.8rem;
+        }
+    }
+}

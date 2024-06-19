@@ -21,6 +21,7 @@
             margin-left: 0rem;
             margin-right: 0rem;
             flex: 1 1 auto;
+            min-height: 60rem;
         }
     }
 
@@ -42,6 +43,9 @@
             padding-top: 11.2rem;
             padding-bottom: 11.2rem;
             flex: 0 0 42.97%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 
@@ -110,8 +114,20 @@
             }
         }
     }
+    &--hide-media-on-desk {
+        @media (min-width: $mq-lg) {
+            & .content-two-columns__media {
+                display: none;
+            }
 
-    &--bottom-on-mob {
+            & .content-two-columns__text-content {
+                margin-right: auto;
+                flex: 0 0 46.121%;
+            }
+        }
+    }
+
+    &--media-bottom-on-mob {
         @media (min-width: 0px) and (max-width: 991.98px) {
             & .content-two-columns__body {
                 flex-direction: column-reverse;

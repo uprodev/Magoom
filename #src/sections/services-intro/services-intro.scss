@@ -1,0 +1,97 @@
+.services-intro {
+
+    &__inner {
+    }
+
+    &__img {
+        overflow: hidden;
+        border-radius: 2.4rem 2.4rem 0 0;
+        height: 0;
+        padding-bottom: 105.55%;
+
+        @media (min-width: $mq-md) {
+            padding-bottom: 56.25%;
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        & .title-icon-1 {
+            position: absolute;
+            height: 7rem;
+            right: 2rem;
+            top: 0.6rem;
+            z-index: 3;
+
+            @media (min-width: $mq-lg) {
+                display: none;
+            }
+        }
+
+        & .row-2 {
+            font-style: italic;
+        }
+    }
+
+    &__title-mob {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $mq-lg) {
+            display: none;
+        }
+
+        & .row-1 {
+            
+        }
+        & .row-2 {
+            margin-left: 8.6rem;
+        }
+    }
+
+    &__title-desk {
+        display: none;
+        flex-direction: column;
+
+        @media (min-width: $mq-lg) {
+            display: flex;
+        }
+
+        & .row-1 {
+            margin-left: 13.9rem;
+        }
+        & .row-2 {
+            
+        }
+    }
+
+    & .content-two-columns__text-content {
+        padding-top: 5rem;
+
+        @media (min-width: $mq-lg) {
+            padding-top: 14rem;
+        }
+    }
+
+    & .content-two-columns__text-content-sub-title-slot {
+        @media (min-width: $mq-lg) {
+            display: none;
+        }
+    }
+
+    & .content-two-columns__text-content-text-slot {
+        @media (min-width: $mq-lg) {
+            margin-top: 1.2rem;
+        }
+    }
+
+    & + .services-list {
+        margin-top: -12rem;
+        padding-top: 0;
+
+        @media (min-width: $mq-lg) {
+            margin-top: -37.5rem;
+        }
+    }
+}

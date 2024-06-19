@@ -1,0 +1,54 @@
+//primary section
+.service-ppc-page {
+    @media (min-width: $mq-lg) {
+        & .advantages-card__decor-word-1 {
+            top: -4rem;
+        }
+        & .advantages-card__decor-word-2 {
+            top: 2.2rem;
+            right: 33rem;
+        }
+        & .advantages-card__decor-word-3 {
+            bottom: 6.8rem;  
+        }
+        & .advantages-card__icon {
+            margin-top: 1rem;
+        }
+    }
+}
+
+//color box
+.service-ppc-page {
+    & .text-content-in-color-box__title {
+        & .title-icon-1 {
+            display: block;
+            position: absolute;
+            height: 9.3rem;
+            left: 21.3rem;
+            top: 8.2rem;
+            z-index: 3;
+
+            @media (min-width: $mq-lg) {
+                height: 23.5rem;
+                left: 93.9rem;
+                top: 2.3rem;
+            }
+        }
+    }
+
+    & .text-content-in-color-box__title-desk {
+        & .row-1 {
+            white-space: nowrap;
+            margin-left: 10.9rem;
+        }
+    }
+
+    & .text-content-in-color-box__title-mob {
+        & .row-4 {
+            margin-left: 5.8rem;
+        }
+        & .row-5 {
+            margin-left: 17.8rem;
+        }
+    }
+}

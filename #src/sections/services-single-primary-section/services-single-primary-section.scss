@@ -1,0 +1,175 @@
+.services-single-primary-section {
+    @media (min-width: 0px) and (max-width: 991.98px) {
+        border-radius: 2.4rem 2.4rem 0 0;
+    }
+
+    &__inner {
+    }
+
+    &__right {
+        @media (min-width: $mq-lg) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        container-type: inline-size;
+
+        & span:not(:first-child):last-child {
+            font-style: italic;
+        }
+
+        & .row-2 {
+            margin-left: min(calc(100cqw - var(--w)), 9.5rem);
+
+            @media (min-width: $mq-lg) {
+                margin-left: min(calc(100cqw - var(--w)), 2.3rem);
+            }
+        }
+    }
+
+    &__subtitle {
+        @media (min-width: $mq-lg) {
+            text-transform: uppercase;
+        }
+    }
+
+    & .content-two-columns__text-content {
+        padding-bottom: 7rem;
+
+        @media (min-width: $mq-lg) {
+            padding-bottom: 12rem;
+        }
+    }
+
+    &.bg-blue-light + .services-single-secondary-section .content-two-columns__media {
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            margin-top: -1px;
+            background-color: var(--light-blue);
+        }
+    }
+}
+
+
+.advantages-card {
+    position: relative;
+    padding-bottom: 12.7rem;
+
+    @media (min-width: $mq-lg) {
+        padding-bottom: 0;
+        padding-top: 9.4rem;
+        padding-left: 19.6rem;
+    }
+
+    &__decor-word {
+        position: absolute;
+        border-radius: 1.6rem;
+        padding: 2.4rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.25em;
+        color: var(--black);
+
+        @media (min-width: $mq-lg) {
+            padding: 3.2rem;
+        }
+    }
+
+    &__decor-word-1 {
+        z-index: 4;
+        top: calc(100% - 0.7rem - 12.7rem);
+        left: 50%;
+        transform: translateX(-50%) rotate(-10deg);
+
+        @media (min-width: $mq-lg) {
+            transform: none;
+            top: 0;
+            left: 11.9rem;
+        }
+    }
+
+    &__decor-word-2 {
+        z-index: 3;
+        display: none;
+
+        @media (min-width: $mq-lg) {
+            display: block;
+            right: 26rem;
+            top: 6.2rem;
+        }
+    }
+    &__decor-word-3 {
+        z-index: 2;
+        display: none;
+
+        @media (min-width: $mq-lg) {
+            display: block;
+            right: 22rem;
+            bottom: 2.8rem;
+            transform: rotate(10deg);
+        }
+    }
+
+    &__body {
+        width: 100%;
+        max-width: 31.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1.6rem;
+        padding: 2.4rem;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        position: relative;
+        z-index: 1;
+
+        @media (min-width: $mq-lg) {
+            padding: 3.2rem;
+            flex-direction: column-reverse;
+            max-width: 28rem;
+            min-width: 28rem;
+        }
+    }
+
+    &__icon {
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+
+        & img, & svg {
+            height: 100%;
+            width: auto;
+        }
+
+        @media (min-width: $mq-lg) {
+            height: auto;
+            width: 16rem;
+            margin-left: auto;
+            margin-bottom: -5.8rem;
+
+            & img, & svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.25em;
+        color: var(--gray-3);
+        text-align: center;
+
+        @media (min-width: $mq-lg) {
+            text-align: start;
+        }
+    }
+}

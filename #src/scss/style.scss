@@ -48,9 +48,23 @@
 @import "../sections/cta/cta";
 @import "../sections/about-us-intro/about-us-intro";
 @import "../sections/text-content-in-color-box/text-content-in-color-box";
+@import "../sections/services-intro/services-intro";
+@import "../sections/services-single-intro/services-single-intro";
+@import "../sections/services-single-primary-section/services-single-primary-section";
+@import "../sections/services-single-secondary-section/services-single-secondary-section";
 // ==== // sections =====================================================
 
 // ==== PAGES =====================================================
 @import "pages/home";
+@import "pages/about-us";
+@import "pages/service-seo";
+@import "pages/service-ppc";
+@import "pages/service-development";
+@import "pages/service-ux";
+@import "pages/service-sales";
+@import "pages/service-marketing";
+@import "pages/service-migration";
+@import "pages/service-management";
+@import "pages/service-pr";
 // ==== AND PAGES =====================================================
 

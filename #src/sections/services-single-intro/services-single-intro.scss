@@ -1,0 +1,112 @@
+.services-single-intro {
+    &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: calc(100% - 1px);
+        right: 0;
+        height: var(--header-height);
+        background-color: var(--purple);
+    }
+
+    &.bg-purple {
+        &:before {
+            background-color: var(--purple);
+        }
+    }
+    &.bg-green {
+        &:before {
+            background-color: var(--green);
+        }
+    }
+
+    @media (min-width: $mq-lg) {
+        background-color: transparent !important;
+        &::before {
+            display: none;
+        }
+    }
+
+    &__inner {
+    }
+
+    &__img {
+        overflow: hidden;
+        border-radius: 2.4rem 2.4rem 0 0;
+        height: 0;
+        padding-bottom: 99.44%;
+
+        @media (min-width: $mq-md) {
+            padding-bottom: 56.25%;
+        }
+
+        @media (min-width: $mq-lg) {
+            padding-bottom: 0;
+            border-radius: 0;
+            overflow: visible;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+
+        & .row-1 {}
+        & .row-2 {
+        }
+        & .row-3 {}
+
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            & span:not(:first-child):last-child {
+                font-style: italic;
+            }
+        }
+
+        @media (min-width: $mq-lg) {
+            & span:nth-child(2) {
+                font-style: italic;
+            }
+        }
+    }
+
+    &__subtitle {
+        @media (min-width: $mq-lg) {
+            text-transform: uppercase;
+        }
+    }
+
+    & .content-two-columns__body {
+        @media (min-width: $mq-lg) {
+            gap: 4.6rem;
+        }
+    }
+
+    & .content-two-columns__text-content {
+        padding-top: 5rem;
+
+        @media (min-width: $mq-lg) {
+            margin-right: auto;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+            min-height: calc(100dvh - var(--header-height));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    & .content-two-columns__media {
+        @media (min-width: $mq-lg) {
+            max-width: calc(50% - (4.6rem / 2));
+        }
+    }
+
+    & + .services-single-primary-section {
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            position: relative;
+            margin-top: -2.4rem;
+        }
+    }
+}
