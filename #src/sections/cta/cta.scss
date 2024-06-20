@@ -1,5 +1,10 @@
 .cta {
     position: relative;
+    margin-top: 8rem;
+
+    @media (min-width: $mq-lg) {
+        margin-top: 12rem;
+    }
 
     @media (min-width: 0px) and (max-width: 991.98px) {
         & .content-two-columns {

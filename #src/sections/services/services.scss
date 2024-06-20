@@ -1,15 +1,7 @@
 .services-list {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
     pointer-events: none;
     position: relative;
     z-index: 2;
-
-    @media (min-width: $mq-lg) {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
-    
-    }
 
     & .services-card {
         pointer-events: auto;
@@ -28,7 +20,7 @@
 
     & + .cta {
         @media (min-width: $mq-lg) {
-            margin-top: -18.6rem;
+            margin-top: -6.6rem;
             position: relative;
             z-index: 1;
         }

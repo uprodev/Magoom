@@ -234,6 +234,9 @@
 .bg-purple {
 	background-color: var(--purple);
 }
+.bg-purple-light {
+	background-color: var(--light-purple);
+}
 .bg-pink {
 	background-color: var(--pink);
 }
@@ -252,4 +255,12 @@
 }
 .bg-green-light {
 	background-color: var(--light-green);
+}
+
+.space-top {
+	margin-top: 8rem;
+
+	@media (min-width: $mq-lg) {
+		margin-top: 12rem;
+	}
 }

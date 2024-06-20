@@ -1,0 +1,108 @@
+.case-studies-intro {
+
+    &__inner {
+        position: relative;
+    }
+
+    &__img {
+        overflow: hidden;
+        border-radius: 2.4rem 2.4rem 0 0;
+        height: 0;
+        padding-bottom: 99.44%;
+
+        @media (min-width: $mq-md) {
+            padding-bottom: 56.25%;
+        }
+
+        @media (min-width: $mq-lg) {
+            padding-bottom: 0;
+            border-radius: 0;
+            overflow: visible;
+            height: 100%;
+            width: 100%;
+        }
+        
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+
+        & .row-1 {}
+        & .row-2 {
+            margin-left: auto;
+
+            @media (min-width: $mq-lg) {
+                margin-left: 14.5rem;
+            }
+        }
+
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            & span:not(:first-child):last-child {
+                font-style: italic;
+            }
+        }
+
+        @media (min-width: $mq-lg) {
+            & span:nth-child(2) {
+                font-style: italic;
+            }
+        }
+    }
+
+    &__subtitle {
+        @media (min-width: $mq-lg) {
+            text-transform: uppercase;
+        }
+    }
+
+    &__decor-icon {
+        display: none;
+
+        @media (min-width: $mq-lg) {
+            display: block;
+            position: absolute;
+            z-index: 3;
+            left: 53%;
+            transform: translateX(-50%);
+            bottom: 3rem;
+            height: 24rem;
+            width: auto;
+        }
+    }
+
+    & .content-two-columns__text-content {
+        padding-top: 5rem;
+
+        @media (min-width: $mq-lg) {
+            margin-right: auto;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+            min-height: calc(100dvh - var(--header-height));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    & .content-two-columns__text-content-sub-title-slot {
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            display: none;
+        }
+    }
+
+    & .content-two-columns__text-content-text-slot {
+        margin-top: 2.4rem !important;
+
+        @media (min-width: $mq-lg) {
+            margin-top: 3.2rem !important;
+        }
+    }
+
+    & + .case-studies {
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            margin-top: 0;
+        }
+    }
+}
+

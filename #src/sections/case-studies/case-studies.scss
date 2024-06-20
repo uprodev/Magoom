@@ -1,0 +1,97 @@
+.case-studies {
+    &__list {
+        padding-left: 0;
+        margin: 0;
+        display: grid;
+        gap: 2.4rem;
+
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50.8rem;
+        }
+
+        @media (min-width: $mq-lg) {
+            grid-template-columns: 1fr 1fr;
+            gap: 3.4rem;
+        }
+    }
+}
+
+.case-studies-card {
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+
+    @media (min-width: $mq-lg) {
+        border-radius: 2rem;
+        padding: 3.2rem;
+        gap: 5.4rem;
+        height: 100%;
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+        margin-top: 1.6rem;
+        color: var(--grey-3);
+
+        @media (min-width: $mq-lg) {
+            color: var(--black);
+        }
+    }
+
+    &__footer {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        @media (min-width: $mq-lg) {
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+
+    &__footer-left {
+    }
+
+    &__type {
+        color: var(--grey-3);
+        font-weight: 600;
+
+        @media (min-width: $mq-lg) {
+            color: var(--black);
+            font-size: 2.4rem;
+            line-height: 1.25em;
+            text-transform: uppercase;
+        }
+    }
+
+    &__logo {
+        margin-top: 0.4rem;
+        display: flex;
+        align-items: center;
+        height: 3.2rem;
+
+        & img,
+        & svg {
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__footer-right {
+        flex: 0 0 auto;
+        & .btn-default {
+            width: 100%;
+        }
+    }
+}
