@@ -3664,7 +3664,7 @@ h5,
   display: none;
 }
 
-.text-content-in-color-box__title span:last-child {
+.text-content-in-color-box__title span:not(:first-child):last-child {
   font-style: italic;
 }
 
@@ -3998,6 +3998,132 @@ h5,
   margin-left: 17.8rem;
 }
 
+.service-development-page .services-single-primary-section__title .row-2 {
+  white-space: nowrap;
+  margin-left: 2.5rem;
+}
+
+.service-development-page .text-content-in-color-box__title .title-icon-1 {
+  display: block;
+  position: absolute;
+  height: 9.3rem;
+  left: 21.3rem;
+  top: 8.2rem;
+  z-index: 3;
+}
+
+.service-development-page .text-content-in-color-box__title-desk .row-1 {
+  margin-left: 11.2rem;
+}
+
+.service-development-page .text-content-in-color-box__title-mob .row-2,
+.service-development-page .text-content-in-color-box__title-mob .row-4 {
+  font-style: italic;
+  margin-left: 8.8rem;
+}
+
+.service-ux-page .services-single-primary-section__title {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.16em;
+}
+
+.service-ux-page .text-content-in-color-box__title .title-icon-1 {
+  display: block;
+  position: absolute;
+  height: 9.3rem;
+  left: 21.3rem;
+  top: 8.2rem;
+  z-index: 3;
+}
+
+.service-ux-page .text-content-in-color-box__title-desk .row-1 {
+  margin-left: 11rem;
+}
+
+.service-ux-page .text-content-in-color-box__title-mob .row-2,
+.service-ux-page .text-content-in-color-box__title-mob .row-4 {
+  font-style: italic;
+  margin-left: 8.8rem;
+}
+
+.service-sales-page .services-single-primary-section__title .row-2 {
+  margin-left: 2.3rem;
+}
+
+.service-sales-page .services-single-secondary-section__title .row-2 {
+  margin-left: 2.3rem;
+}
+
+.service-sales-page .text-content-in-color-box__title .title-icon-1 {
+  display: block;
+  position: absolute;
+  height: 9.3rem;
+  left: 21.3rem;
+  top: 8.2rem;
+  z-index: 3;
+}
+
+.service-sales-page .text-content-in-color-box__title-desk .row-1 {
+  margin-left: 11rem;
+}
+
+.service-sales-page .text-content-in-color-box__title-mob .row-2,
+.service-sales-page .text-content-in-color-box__title-mob .row-4 {
+  font-style: italic;
+  margin-left: 8.8rem;
+}
+
+.service-marketing-page .text-content-in-color-box__title .title-icon-1 {
+  display: block;
+  position: absolute;
+  height: 9.3rem;
+  left: 21.3rem;
+  top: 8.2rem;
+  z-index: 3;
+}
+
+.service-marketing-page .text-content-in-color-box__title-desk .row-1 {
+  margin-left: 11rem;
+}
+
+.service-marketing-page .text-content-in-color-box__title-mob .row-2,
+.service-marketing-page .text-content-in-color-box__title-mob .row-4 {
+  font-style: italic;
+  margin-left: 8.8rem;
+}
+
+.service-migration-page .services-single-primary-section__title .row-2 {
+  white-space: nowrap;
+  margin-left: 2.3rem;
+}
+
+.service-migration-page .text-content-in-color-box__title .title-icon-1 {
+  display: block;
+  position: absolute;
+  height: 9.3rem;
+  left: 26.3rem;
+  top: 2.2rem;
+  z-index: 3;
+}
+
+.service-migration-page .text-content-in-color-box__title-desk .row-1 {
+  margin-left: 3.9rem;
+}
+
+.service-migration-page .text-content-in-color-box__title-desk .row-2 {
+  margin-left: -0.5rem;
+  white-space: nowrap;
+}
+
+.service-migration-page .text-content-in-color-box__title-mob .row-2,
+.service-migration-page .text-content-in-color-box__title-mob .row-4 {
+  font-style: italic;
+  margin-left: 8.8rem;
+}
+
 .service-management-page .services-single-intro__title .row-2 {
   margin-left: auto;
 }
@@ -4016,6 +4142,29 @@ h5,
 }
 
 .service-management-page .text-content-in-color-box__title-mob .row-3 {
+  margin-left: 8.8rem;
+}
+
+.service-pr-page .services-single-primary-section__title .row-2 {
+  margin-left: 5.9rem;
+}
+
+.service-pr-page .text-content-in-color-box__title .title-icon-1 {
+  display: block;
+  position: absolute;
+  height: 9.3rem;
+  left: 19.3rem;
+  top: 14.2rem;
+  z-index: 3;
+}
+
+.service-pr-page .text-content-in-color-box__title-desk .row-1 {
+  margin-left: 3.9rem;
+}
+
+.service-pr-page .text-content-in-color-box__title-mob .row-2,
+.service-pr-page .text-content-in-color-box__title-mob .row-4 {
+  font-style: italic;
   margin-left: 8.8rem;
 }
 
@@ -4938,6 +5087,65 @@ h5,
     top: 2.3rem;
   }
 
+  .service-development-page .text-content-in-color-box__title .title-icon-1 {
+    height: 17.5rem;
+    left: 90.9rem;
+    top: 4.8rem;
+  }
+
+  .service-ux-page .advantages-card__decor-word-1 {
+    left: 17.9rem;
+  }
+
+  .service-ux-page .text-content-in-color-box__title .title-icon-1 {
+    height: 16.5rem;
+    left: 85.9rem;
+    top: 5.3rem;
+  }
+
+  .service-sales-page .advantages-card__decor-word-1 {
+    left: 15.9rem;
+  }
+
+  .service-sales-page .services-single-secondary-section__title .row-2 {
+    margin-left: 3.3rem;
+  }
+
+  .service-sales-page .text-content-in-color-box__title .title-icon-1 {
+    height: 17.5rem;
+    left: 92.9rem;
+    top: 3.3rem;
+  }
+
+  .service-marketing-page .advantages-card__decor-word-1 {
+    left: 15.4rem;
+  }
+
+  .service-marketing-page .text-content-in-color-box__title .title-icon-1 {
+    height: 19.5rem;
+    left: 70.9rem;
+    top: 4.3rem;
+  }
+
+  .service-migration-page .services-single-primary-section__title .row-2 {
+    margin-left: 0;
+  }
+
+  .service-migration-page .advantages-card__decor-word-1 {
+    left: 20.9rem;
+  }
+
+  .service-migration-page .advantages-card__icon {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .service-migration-page .text-content-in-color-box__title .title-icon-1 {
+    height: 16.5rem;
+    left: 102.9rem;
+    top: -5.7rem;
+  }
+
   .service-management-page .services-single-intro__title .row-2 {
     margin-left: 0;
   }
@@ -4963,6 +5171,20 @@ h5,
     height: 15.6rem;
     left: 104rem;
     top: 5.3rem;
+  }
+
+  .service-pr-page .services-single-primary-section__title .row-2 {
+    margin-left: 0rem;
+  }
+
+  .service-pr-page .advantages-card__decor-word-1 {
+    left: 19.9rem;
+  }
+
+  .service-pr-page .text-content-in-color-box__title .title-icon-1 {
+    height: 19.5rem;
+    left: 86.9rem;
+    top: 3.3rem;
   }
 }
 

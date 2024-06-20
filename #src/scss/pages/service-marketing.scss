@@ -1,0 +1,41 @@
+//primary section
+.service-marketing-page {
+    @media (min-width: $mq-lg) {
+        & .advantages-card__decor-word-1 {
+            left: 15.4rem;
+        }
+    }
+}
+
+//color box
+.service-marketing-page {
+    & .text-content-in-color-box__title {
+        & .title-icon-1 {
+            display: block;
+            position: absolute;
+            height: 9.3rem;
+            left: 21.3rem;
+            top: 8.2rem;
+            z-index: 3;
+
+            @media (min-width: $mq-lg) {
+                height: 19.5rem;
+                left: 70.9rem;
+                top: 4.3rem;
+            }
+        }
+    }
+
+    & .text-content-in-color-box__title-desk {
+        & .row-1 {
+            margin-left: 11rem;
+        }
+    }
+
+    & .text-content-in-color-box__title-mob {
+        & .row-2,  & .row-4 {
+            font-style: italic;
+            margin-left: 8.8rem;
+        }
+    }
+}

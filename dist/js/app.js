@@ -656,6 +656,8 @@ function initCssVariableWidth() {
 
         setVariable();
 
+        setInterval(setVariable, 200);
+
         window.addEventListener('resize', setVariable);
     })
 }
