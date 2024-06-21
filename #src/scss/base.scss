@@ -252,15 +252,50 @@ h5,
 	& h5,
 	& h6 {
 		margin-bottom: 1.2rem;
+		color: inherit;
+	}
+
+	& h1 {
+		color: var(--black);
+		font-size: 2.4rem;
+		line-height: 1.25em;
+		font-weight: 600;
+		margin-bottom: 4rem;
+
+		@media (min-width: $mq-lg) {
+			font-size: 4.2rem;
+			line-height: 1.14em;
+			margin-bottom: 1.6rem;
+		}
+	}
+
+	& h2 {
+		font-weight: 700;
+		font-size: 1.6rem;
+		line-height: 1.68em;
+
+		@media (min-width: $mq-lg) {
+			font-size: 2.4rem;
+			line-height: 1.25em;
+			font-weight: 600;
+		}
 	}
 
 	& p,
 	& ul,
 	& ol {
-		margin-bottom: 1.2;
+		margin-bottom: 1.2rem;
 
 		@media (min-width: $mq-lg) {
 			margin-bottom: 1em;
+		}
+	}
+
+	& p {
+		@media (min-width: $mq-lg) {
+			& + p {
+				margin-top: 2.4rem;
+			}
 		}
 	}
 
@@ -272,7 +307,11 @@ h5,
 			list-style: disc;
 
 			&:not(:last-child) {
-				margin-bottom: 0.75em;
+				margin-bottom: 1.25em;
+
+				@media (min-width: $mq-lg) {
+					margin-bottom: 0.75em;
+				}
 			}
 
 			& > *:last-child {
@@ -374,6 +413,10 @@ h5,
 				margin-top: 3.2rem;
 			}
 		}
+	}
+
+	a {
+		text-decoration: underline;
 	}
 }
 
