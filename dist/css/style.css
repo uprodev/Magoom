@@ -4464,6 +4464,43 @@ h5,
   border-color: var(--light-blue);
 }
 
+.text-banner {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.text-banner__title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.text-banner__title .title-icon {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.text-banner__title span:not(:first-child):last-child {
+  font-style: italic;
+}
+
+.text-banner__subtitle {
+  text-align: center;
+  margin-top: 2.4rem;
+}
+
+.text-banner__text {
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
 .about-us-page .text-content-in-color-box__title .title-icon-1 {
   display: block;
   position: absolute;
@@ -4702,6 +4739,49 @@ h5,
 .service-pr-page .text-content-in-color-box__title-mob .row-4 {
   font-style: italic;
   margin-left: 8.8rem;
+}
+
+.thank-you-page .text-banner__title {
+  text-align: start;
+}
+
+.thank-you-page .text-banner__title .title-icon {
+  display: block;
+  height: 7.7rem;
+  right: -0.4rem;
+  top: -1.3rem;
+  -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.thank-you-page .text-banner__title .row-2 {
+  margin-left: auto;
+}
+
+.thank-you-page .text-banner__title .row-2 span {
+  display: none;
+}
+
+.thank-you-page + .footer {
+  background-color: var(--light-blue);
+  margin-top: -1px;
+}
+
+.not-found-page .text-banner__title {
+  display: block;
+}
+
+.not-found-page .text-banner__title .title-icon {
+  display: block;
+  height: 7.7rem;
+  right: -0.4rem;
+  top: 1.7rem;
+}
+
+.not-found-page + .footer {
+  background-color: var(--purple);
+  margin-top: -1px;
 }
 
 @media (min-width: 768px) {
@@ -6028,6 +6108,30 @@ h5,
             flex-direction: row;
   }
 
+  .text-banner {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: calc(100dvh - var(--header-height));
+  }
+
+  .text-banner__subtitle {
+    margin-top: 1.6rem;
+  }
+
+  .text-banner__text {
+    margin-top: 0.6rem;
+  }
+
   .about-us-page .text-content-in-color-box__title {
     width: 100%;
     max-width: 61rem;
@@ -6181,6 +6285,38 @@ h5,
     height: 19.5rem;
     left: 86.9rem;
     top: 3.3rem;
+  }
+
+  .thank-you-page .text-banner__title .title-icon {
+    height: 19rem;
+    right: auto;
+    left: 81.1rem;
+    top: -8.3rem;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .thank-you-page .text-banner__title .row-1 {
+    margin-left: 20.9rem;
+  }
+
+  .thank-you-page .text-banner__title .row-2 {
+    margin-left: 32.9rem;
+  }
+
+  .thank-you-page .text-banner__title .row-2 span {
+    display: inline;
+    margin-left: -0.1em;
+  }
+
+  .not-found-page .text-banner__title .title-icon {
+    height: 21.2rem;
+    right: 18.1rem;
+    top: 0.7rem;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 }
 
@@ -6459,6 +6595,41 @@ h5,
   }
 
   .contacts__col-2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50.8rem;
+  }
+
+  .text-banner:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: calc(100% - 1px);
+    right: 0;
+    height: var(--header-height);
+  }
+
+  .text-banner.bg-blue-light:before {
+    background-color: var(--light-blue);
+  }
+
+  .text-banner.bg-purple:before {
+    background-color: var(--purple);
+  }
+
+  .text-banner__title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 31.2rem;
+  }
+
+  .text-banner__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50.8rem;
+  }
+
+  .text-banner__text {
     margin-left: auto;
     margin-right: auto;
     max-width: 50.8rem;

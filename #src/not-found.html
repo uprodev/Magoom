@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Magoom"
+})
+
+<body>
+    @@include('components/loader/_page-loader.html', {})
+
+    @@include('sections/header/_header.html',{
+    "mod": "header--purple"
+    })
+
+    <main class="_page not-found-page">
+        <section class="text-banner bg-purple">
+            <div class="container">
+                <div class="text-banner__title title-2">
+                    <img class="title-icon" src="img/icons/decor-icon-12.svg" alt="">
+                    <span class="row-1">
+                        page 
+                    </span>
+                    <span class="row-2">
+                        not found
+                    </span>
+                </div>
+                <div class="text-banner__subtitle title-2-subtitle">
+                    This page doesn't exist
+                </div>
+                <div class="text-banner__text text-content last-no-margin">
+                    <p>
+                        Double-check the URL and try again.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- == FOOTER ================== -->
+    @@include('sections/footer/_footer.html')
+    <!-- == // FOOTER ================== -->
+</body>
+
+</html>

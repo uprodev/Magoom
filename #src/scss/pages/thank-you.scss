@@ -1,0 +1,50 @@
+.thank-you-page {
+
+    & .text-banner__title {
+        text-align: start;
+
+        & .title-icon {
+            display: block;
+            height: 7.7rem;
+            right: -0.4rem;
+            top: -1.3rem;
+            transform: rotate(25deg);
+
+            @media (min-width: $mq-lg) {
+                height: 19rem;
+                right: auto;
+                left: 81.1rem;
+                top: -8.3rem;
+                transform: none;
+            }
+        }
+
+        & .row-1 {
+            @media (min-width: $mq-lg) {
+                margin-left: 20.9rem;
+            }
+        }
+
+        & .row-2 {
+            margin-left: auto;
+
+            & span {
+                display: none;
+            }
+
+            @media (min-width: $mq-lg) {
+                margin-left: 32.9rem;
+
+                & span {
+                    display: inline;
+                    margin-left: -0.1em;
+                }
+            }
+        }
+    }
+
+    & + .footer {
+        background-color: var(--light-blue);
+        margin-top: -1px;
+    }
+}
