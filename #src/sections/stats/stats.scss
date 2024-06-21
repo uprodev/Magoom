@@ -1,0 +1,111 @@
+.stats {
+    &__inner {
+        position: relative;
+    }
+
+    &__title {
+        text-align: center;
+
+        @media (min-width: $mq-lg) {
+            text-align: start;
+        }
+    }
+
+    &__list {
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 4rem;
+        display: grid;
+        gap: 2.4rem;
+
+        @media (min-width: $mq-lg) {
+            margin-top: 5.4rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        height: 10rem;
+        right: 1.1rem;
+        top: 5.6rem;
+        z-index: 3;
+        transform: scaleX(-1);
+
+        @media (min-width: $mq-lg) {
+            height: 17.4rem;
+            transform: none;
+            right: -3.9rem;
+            top: 25.6rem;
+        }
+
+        & img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+.stats-card {
+    border-radius: 1.6rem;
+    padding: 2.4rem 1.4rem;
+
+    @media (min-width: $mq-lg) {
+        border-radius: 2rem;
+        padding: 3.2rem;
+        height: 100%;
+        min-height: 23.7rem;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.25em;
+        text-align: center;
+        color: var(--black);
+
+        @media (min-width: $mq-lg) {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.68em;
+            color: var(--grey-3);
+            text-align: start;
+        }
+    }
+
+    &__body {
+        margin-top: 4rem;
+
+        @media (min-width: $mq-lg) {
+            margin-top: 3.4rem;
+            display: grid;
+            grid-template-columns: 1fr 19.6rem;
+            gap: 2.4rem;
+        }
+    }
+
+    &__value {
+        font-size: 12rem;
+        line-height: 0.83em;
+        text-transform: uppercase;
+        color: var(--black);
+        font-weight: 800;
+        text-align: center;
+        font-family: $secondFontFamily;
+
+        @media (min-width: $mq-lg) {
+            text-align: start;
+        }
+    }
+
+    &__text {
+        margin-top: 1.6rem;
+        text-align: center;
+
+        @media (min-width: $mq-lg) {
+            margin-top: 0;
+            text-align: start;
+        }
+    }
+}

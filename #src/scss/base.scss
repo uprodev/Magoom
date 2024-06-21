@@ -251,27 +251,36 @@ h5,
 	& h4,
 	& h5,
 	& h6 {
-		margin-bottom: 2rem;
+		margin-bottom: 1.2rem;
 	}
 
 	& p,
 	& ul,
 	& ol {
-		margin-bottom: 2rem;
+		margin-bottom: 1.2;
+
+		@media (min-width: $mq-lg) {
+			margin-bottom: 1em;
+		}
 	}
 
 	& ul:not(.spoller) {
-		padding-left: 3em;
+		padding-left: 1em;
+		color: #1A1A1A;
 
 		& > li {
 			list-style: disc;
 
 			&:not(:last-child) {
-				margin-bottom: 0.7em;
+				margin-bottom: 0.75em;
 			}
 
 			& > *:last-child {
 				margin-bottom: 0;
+			}
+
+			& strong {
+				font-weight: 700;
 			}
 		}
 	}
@@ -359,7 +368,11 @@ h5,
 		& ~ h4,
 		& ~ h5,
 		& ~ h6 {
-			margin-top: 2rem;
+			margin-top: 4rem;
+
+			@media (min-width: $mq-lg) {
+				margin-top: 3.2rem;
+			}
 		}
 	}
 }
