@@ -1,0 +1,206 @@
+.contacts-page {
+    & + .footer {
+        background-color: var(--green);
+        margin-top: -1px;
+    }
+}
+
+.contacts {
+    background-color: var(--green);
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: calc(100% - 1px);
+        right: 0;
+        height: var(--header-height);
+        background-color: var(--green);
+    }
+
+    &__body {
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+
+        @media (min-width: $mq-lg) {
+            min-height: calc(100dvh - var(--header-height));
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            display: flex;
+            align-items: center;
+            gap: 6rem;
+        }
+    }
+
+    &__col-1 {
+        @media (min-width: $mq-lg) {
+            flex: 1 1 auto;
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 31.2rem;
+        }
+
+        & .title-icon-1 {
+            position: absolute;
+            z-index: 2;
+            height: 9rem;
+            right: 1.2rem;
+            bottom: -1rem;
+            transform: rotate(13deg);
+
+            @media (min-width: $mq-lg) {
+                height: 17.3rem;
+                right: 0.7rem;
+                bottom: -4.3rem;
+                transform: none;
+            }
+        }
+
+        & .row-1 {
+        }
+        & .row-2 {
+            margin-left: 3.4rem;
+            font-style: italic;
+
+            @media (min-width: $mq-lg) {
+                margin-left: 5.3rem;
+            }
+        }
+
+        & .row-3 {
+            margin-left: 3.4rem;
+            font-style: italic;
+
+            @media (min-width: $mq-lg) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__col-2 {
+        margin-top: 4rem;
+
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50.8rem;
+        }
+
+        @media (min-width: $mq-lg) {
+            margin-top: 0;
+            flex: 0 0 48.56%;
+        }
+    }
+}
+
+.form {
+    &__box {
+        background-color: #fff;
+        border-radius: 1.6rem;
+        padding: 2.4rem;
+
+        @media (min-width: $mq-lg) {
+            border-radius: 2rem;
+            padding: 3.2rem;
+        }
+    }
+
+    &__title {
+    }
+
+    &__fields {
+        margin-top: 2.4rem;
+        display: grid;
+        gap: 1.6rem;
+
+        @media (min-width: $mq-lg) {
+            margin-top: 3.2rem;
+            gap: 2.4rem;
+        }
+    }
+
+    &__field {
+    }
+
+    &__label {
+        display: none;
+        font-weight: 700;
+        color: var(--black);
+        margin-bottom: 0.6rem;
+        display: block;
+    }
+
+    &__footer {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1.6rem;
+
+        @media (min-width: $mq-lg) {
+            margin-top: 3.2rem;
+            flex-direction: row;
+        }
+    }
+
+    &__footer-left {
+    }
+
+    &__warning-text {
+        & a {
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+    }
+
+    &__footer-right {
+        flex: 0 0 auto;
+        & .btn-default {
+            width: 100%;
+        }
+    }
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid var(--grey-2);
+    background-color: #fff;
+    outline: none;
+    min-height: 3.2rem;
+    padding: 2px 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black);
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease;
+        cursor: inherit;
+
+    &::placeholder {
+        color: var(--grey-2);
+        font-weight: 700;
+    }
+
+    &:focus {
+        background-color: var(--light-blue);
+        border-color: var(--light-blue);
+    }
+
+    @media #{$mouse-device} {
+        &:hover {
+            background-color: var(--light-blue);
+            border-color: var(--light-blue);
+        }
+    }
+}

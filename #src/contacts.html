@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Magoom"
+})
+
+<body>
+    @@include('components/loader/_page-loader.html', {})
+
+    @@include('sections/header/_header.html',{
+    "mod": "header--green"
+    })
+
+    <main class="_page contacts-page">
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__body">
+                    <div class="contacts__col-1">
+                        <div class="contacts__title title-2-mob-lg">
+                            <img class="title-icon-1" src="img/icons/decor-icon-11.svg" alt="">
+                            <span class="row-1">
+                                Got ideas?
+                            </span>
+                            <span class="row-2">
+                                We’ve got
+                            </span>
+                            <span class="row-3">
+                                skills
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contacts__col-2">
+                        <form action="/">
+                            <div class="form">
+                                <div class="form__box">
+                                    <div class="form__title title-2-subtitle">
+                                        Tell us more about yourself & what you’ve got in mind
+                                    </div>
+                                    <div class="form__fields">
+                                        <div class="form__field">
+                                            <label class="form__label">
+                                                Your name
+                                            </label>
+                                            <input type="text" class="input" placeholder="Name and long Surname">
+                                        </div>
+                                        <div class="form__field">
+                                            <label class="form__label">Your email</label>
+                                            <input type="email" class="input" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form__footer">
+                                        <div class="form__footer-left">
+                                            <div class="form__warning-text">
+                                                By clicking “Book a call” you agree to our <a href="#">terms</a> and <a href="#">privacy policy</a>.
+                                            </div>
+                                        </div>
+                                        <div class="form__footer-right">
+                                            <button class="btn-default btn-default--primary">
+                                                Book a call
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- == FOOTER ================== -->
+    @@include('sections/footer/_footer.html')
+    <!-- == // FOOTER ================== -->
+</body>
+
+</html>
