@@ -75,6 +75,7 @@
         font-weight: 600;
         line-height: 1.25em;
         color: var(--black);
+        white-space: nowrap;
 
         @media (min-width: $mq-lg) {
             padding: 3.2rem;

@@ -23,13 +23,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	initCssVariableWidth();
 	initParallax();
 
-
-	// ==== components =====================================================
-	@@include('../components/spoiler/spoiler.js')
-	// ==== // components =====================================================
-
-
-
 	// ==== sections =====================================================
 	@@include('../sections/header/header.js')
 	@@include('../sections/home-intro/home-intro.js')
@@ -37,6 +30,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	@@include('../sections/reviews/reviews.js')
 	@@include('../sections/footer/footer.js')
 	// ==== // sections =====================================================
+
+	// ==== components =====================================================
+	@@include('../components/spoiler/spoiler.js')
+	// ==== // components =====================================================
+
+	
 
 	document.body.classList.add('page-loaded');
 });

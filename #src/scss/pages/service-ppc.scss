@@ -1,5 +1,5 @@
 //primary section
-.service-ppc-page {
+.service-ppc-page, .postid-144 {
     @media (min-width: $mq-lg) {
         & .advantages-card__decor-word-1 {
             top: -4rem;
@@ -18,7 +18,7 @@
 }
 
 //color box
-.service-ppc-page {
+.service-ppc-page, .postid-144 {
     & .text-content-in-color-box__title {
         & .title-icon-1 {
             display: block;

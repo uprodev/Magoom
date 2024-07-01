@@ -1,0 +1,11 @@
+.contacts-page, .page-id-359 {
+    & + .footer {
+        background-color: var(--green);
+        margin-top: -1px;
+    }
+
+    & .footer {
+        background-color: var(--green);
+        margin-top: -1px;
+    }
+}

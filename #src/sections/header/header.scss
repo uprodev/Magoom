@@ -435,12 +435,64 @@
                 background-color: var(--light-green);
             }
 
-            & ul {
+            & > a {
+                display: block;
+                font-weight: 500;
+                font-size: 1.8rem;
+                position: relative;
+                line-height: 1.78em;
+                color: #08090a;
+        
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--black);
+                    color: var(--white);
+                    transition:
+                        transform 0.15s ease,
+                        color 0.15s ease;
+                    content: "\e905";
+                    font-family: "icomoon" !important;
+                    speak: never;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    /* Better Font Rendering =========== */
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-weight: 400;
+                    height: 2.4rem;
+                    width: 2.4rem;
+                    border-radius: 999px;
+                    font-size: 1.2rem;
+                    padding-bottom: 0.05em;
+                }
+        
+                &.active {
+                    &::before {
+                        transform: translateY(-50%) rotate(-90deg);
+                    }
+                }
+            }
+
+            & ul.sub-menu {
                 padding-left: 0;
                 margin: 0;
-                display: grid;
-                gap: 1.2rem;
                 padding-top: 1.2rem;
+                display: none;
+
+                & > li {
+                    &:not(:first-child) {
+                        margin-top: 1.2rem;
+                    }
+                }
 
                 & a {
                     display: flex;
@@ -462,52 +514,6 @@
         }
     }
 
-    &__list-item {
-        display: block;
-        font-weight: 500;
-        font-size: 1.8rem;
-        position: relative;
-        line-height: 1.78em;
-        color: #08090a;
-
-        &:before {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--black);
-            color: var(--white);
-            transition:
-                transform 0.15s ease,
-                color 0.15s ease;
-            content: "\e905";
-            font-family: "icomoon" !important;
-            speak: never;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            /* Better Font Rendering =========== */
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-weight: 400;
-            height: 2.4rem;
-            width: 2.4rem;
-            border-radius: 999px;
-            font-size: 1.2rem;
-            padding-bottom: 0.05em;
-        }
-
-        &.active {
-            &::before {
-                transform: translateY(-50%) rotate(-90deg);
-            }
-        }
-    }
 
     &__btn {
         padding: 0 2.4rem 2.4rem;
@@ -516,8 +522,4 @@
             width: 100%;
         }
     }
-}
-.btn-default {
-}
-.btn-default--secondary {
 }

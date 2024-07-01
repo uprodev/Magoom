@@ -15,17 +15,17 @@
         border-radius: 2.4rem 2.4rem 0 0;
         position: relative;
 
-        &.bg-blue-light {
+        &.bg-blue-light, &[style="background-color: #c1f5f4"] {
             & + .cta {
                 background-color: var(--light-blue);
             }
         }
-        &.bg-purple {
+        &.bg-purple, &[style="background-color: #9394f8"] {
             & + .cta {
                 background-color: var(--purple);
             }
         }
-        &.bg-green {
+        &.bg-green, &[style="background-color: #5dc95d"] {
             & + .cta {
                 background-color: var(--green);
             }

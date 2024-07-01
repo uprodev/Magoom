@@ -1,5 +1,5 @@
 // intro
-.service-management-page {
+.service-management-page, .postid-226 {
     & .services-single-intro__title {
         & .row-2 {
             margin-left: auto;
@@ -12,7 +12,7 @@
 }
 
 //primary section
-.service-management-page {
+.service-management-page, .postid-226 {
     @media (min-width: $mq-lg) {
 
         & .services-single-primary-section__title {
@@ -35,7 +35,7 @@
 }
 
 //color box
-.service-management-page {
+.service-management-page, .postid-226 {
     & .text-content-in-color-box__title {
         & .title-icon-1 {
             display: block;

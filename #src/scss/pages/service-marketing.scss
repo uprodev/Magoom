@@ -1,5 +1,5 @@
 //primary section
-.service-marketing-page {
+.service-marketing-page, .postid-222 {
     @media (min-width: $mq-lg) {
         & .advantages-card__decor-word-1 {
             left: 15.4rem;
@@ -8,7 +8,7 @@
 }
 
 //color box
-.service-marketing-page {
+.service-marketing-page, .postid-222 {
     & .text-content-in-color-box__title {
         & .title-icon-1 {
             display: block;

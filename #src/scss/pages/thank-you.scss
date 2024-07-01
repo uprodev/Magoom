@@ -1,4 +1,4 @@
-.thank-you-page {
+.thank-you-page, .page-id-374 {
 
     & .text-banner__title {
         text-align: start;
@@ -44,6 +44,11 @@
     }
 
     & + .footer {
+        background-color: var(--light-blue);
+        margin-top: -1px;
+    }
+
+    & .footer {
         background-color: var(--light-blue);
         margin-top: -1px;
     }

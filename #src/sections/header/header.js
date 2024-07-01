@@ -21,6 +21,15 @@
     const mobileMenu = document.querySelector('[data-mobile-menu]');
     if(mobileMenu) {
         const burger = document.querySelector('[data-action="toggle-show-mobile-menu"]');
+        const mobileMenuList = mobileMenu.querySelector('.mobile-menu__list');
+        const listItems = Array.from(mobileMenuList.children);
+
+        listItems.forEach(li => {
+            const link = li.firstElementChild;
+            if(link.nextElementSibling) {
+                link.setAttribute('data-spoiler-trigger', '');
+            }
+        })
 
         
         const setHeaderAsFixed = () => {
