@@ -2335,6 +2335,10 @@ h5,
   border-bottom: 1.5px solid transparent;
 }
 
+.header__nav-item.current-page {
+  border-color: currentColor;
+}
+
 .header__nav-has-drop-down:hover .header__nav-item {
   color: var(--green);
 }

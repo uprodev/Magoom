@@ -122,6 +122,10 @@
         position: relative;
         z-index: 2;
         border-bottom: 1.5px solid transparent;
+
+        &.current-page {
+            border-color: currentColor;
+        }
     }
 
     &__nav-has-drop-down {
