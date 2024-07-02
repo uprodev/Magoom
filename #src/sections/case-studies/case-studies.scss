@@ -28,7 +28,7 @@
 
     @media (min-width: $mq-lg) {
         border-radius: 2rem;
-        padding: 3.2rem;
+        padding: 3.2rem 3.2rem 4rem;
         gap: 5.4rem;
         height: 100%;
     }
@@ -64,12 +64,12 @@
     &__type {
         color: var(--grey-3);
         font-weight: 600;
+        text-transform: uppercase;
 
         @media (min-width: $mq-lg) {
             color: var(--black);
             font-size: 2.4rem;
             line-height: 1.25em;
-            text-transform: uppercase;
         }
     }
 

@@ -2324,10 +2324,15 @@ h5,
   display: none;
 }
 
+.header__nav > li.current-page .header__nav-item {
+  border-color: currentColor;
+}
+
 .header__nav-item {
   line-height: 1.5em;
   position: relative;
   z-index: 2;
+  border-bottom: 1.5px solid transparent;
 }
 
 .header__nav-has-drop-down:hover .header__nav-item {
@@ -4048,6 +4053,7 @@ h5,
 .case-studies-card__type {
   color: var(--grey-3);
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .case-studies-card__logo {
@@ -4181,7 +4187,7 @@ h5,
 }
 
 .case-studies-description-card__text {
-  margin-top: 4rem;
+  margin-top: 2.4rem;
 }
 
 .case-studies-description-card__text.text-content ul {
@@ -4453,27 +4459,22 @@ h5,
 
 .input::-webkit-input-placeholder {
   color: var(--grey-2);
-  font-weight: 700;
 }
 
 .input::-moz-placeholder {
   color: var(--grey-2);
-  font-weight: 700;
 }
 
 .input:-ms-input-placeholder {
   color: var(--grey-2);
-  font-weight: 700;
 }
 
 .input::-ms-input-placeholder {
   color: var(--grey-2);
-  font-weight: 700;
 }
 
 .input::placeholder {
   color: var(--grey-2);
-  font-weight: 700;
 }
 
 .input:focus {
@@ -5656,6 +5657,17 @@ h5,
   .text-content-in-color-box {
     padding-top: 12rem;
     padding-bottom: 12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 63.2rem;
   }
 
   .text-content-in-color-box__title-desk {
@@ -5737,7 +5749,7 @@ h5,
     margin-right: auto;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    min-height: calc(100dvh - var(--header-height));
+    min-height: 75.6rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5777,6 +5789,7 @@ h5,
 
   .services-single-primary-section .content-two-columns__text-content {
     padding-bottom: 12rem;
+    min-height: 75.7rem;
   }
 
   .advantages-card {
@@ -5896,7 +5909,7 @@ h5,
     margin-right: auto;
     padding-top: 12rem;
     padding-bottom: 12rem;
-    min-height: calc(100dvh - var(--header-height));
+    min-height: 75.6rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5921,7 +5934,7 @@ h5,
 
   .case-studies-card {
     border-radius: 2rem;
-    padding: 3.2rem;
+    padding: 3.2rem 3.2rem 4rem;
     gap: 5.4rem;
     height: 100%;
   }
@@ -5947,7 +5960,6 @@ h5,
     color: var(--black);
     font-size: 2.4rem;
     line-height: 1.25em;
-    text-transform: uppercase;
   }
 
   .case-studies-single-intro__img {
@@ -5994,7 +6006,7 @@ h5,
     margin-right: auto;
     padding-top: 12rem;
     padding-bottom: 12rem;
-    min-height: calc(100dvh - var(--header-height));
+    min-height: 75.3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6015,7 +6027,7 @@ h5,
   .case-studies-description-card {
     border-radius: 2rem;
     padding: 3.2rem;
-    padding-bottom: 7.2rem;
+    padding-bottom: 8.2rem;
     height: 100%;
   }
 
@@ -6522,8 +6534,6 @@ h5,
   }
 
   .content-two-columns__text-content-title-slot {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 31.2rem;
   }
 
@@ -6647,8 +6657,6 @@ h5,
   }
 
   .text-content-in-color-box__title-slot {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 31.2rem;
   }
 
@@ -6805,6 +6813,18 @@ h5,
     margin-left: auto;
     margin-right: auto;
     max-width: 50.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .content-two-columns__text-content-title-slot {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-content-in-color-box__title-slot {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

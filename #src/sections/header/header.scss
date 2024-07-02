@@ -111,12 +111,17 @@
             padding-left: 0;
             gap: 3.6rem;
         }
+
+        & > li.current-page .header__nav-item {
+            border-color: currentColor;
+        }
     }
 
     &__nav-item {
         line-height: 1.5em;
         position: relative;
         z-index: 2;
+        border-bottom: 1.5px solid transparent;
     }
 
     &__nav-has-drop-down {
